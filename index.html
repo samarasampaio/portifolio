@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portifólio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-list">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#projetos">PROJETOS</a></li>
+                <li><a href="#contato">CONTATO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Oiee! me chamo Samara!</h2>
+        <div class="container">
+            <img src="assets/img/menina_pequeno.svg" alt="Imagem de uma menina com um notebook">
+        </div>
+        <p>Tenho 20 anos e sou graduanda no curso de Sistemas de Informação. Estou me especializando em análise e ciência de dados, desenvolvendo projetos que aprimoram minhas habilidades e conhecimentos nessas áreas.</p>
+    </section>
+
+    <section id="tecnologias">
+        <h2>Ferramentas e Tecnologias</h2>
+        <div class="container">
+            <img src="assets/img/powerbi.svg    " alt="Power BI" title="Power BI">
+            <img src="assets/img/python_menor.svg" alt="Python" title="Python">
+            <img src="assets/img/sql_menor.svg" alt="SQL" title="SQL">
+            <img src="assets/img/figma_menor.svg" alt="Figma" title="Figma">
+            <img src="assets/img/html_menor.svg" alt="HTML5" title="HTML5">
+            <img src="assets/img/cass_menor.svg" alt="CSS3" title="CSS3">
+        </div>
+    </section>
+
+    <section id="projetos">
+        <h2>Meus Projetos</h2>
+        <div class="projeto">
+            <h3>Nome do Projeto 1</h3>
+            <p>Descrição do projeto 1.</p>
+            <a href="#">Link para o projeto</a>
+        </div>
+        <div class="projeto">
+            <h3>Nome do Projeto 2</h3>
+            <p>Descrição do projeto 2.</p>
+            <a href="#">Link para o projeto</a>
+        </div>
+        <div class="projeto">
+            <h3>Nome do Projeto 3</h3>
+            <p>Descrição do projeto 3.</p>
+            <a href="#">Link para o projeto</a>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Informações de Contato</h2>
+        <div class="contato">
+            <a href="https://www.linkedin.com/in/samarasampaioprofile" target="_blank">
+                <img src="assets/img/linkedin_menor.svg" alt="LinkedIn" class="icone-contato">
+            </a>
+            <a href="https://github.com/samarasampaio" target="_blank">
+                <img src="assets/img/github_menor.svg" alt="GitHub" class="icone-contato">
+            </a>
+        </div>
+    </section>
+    
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navList = document.querySelector('.nav-list');
+
+        mobileMenu.addEventListener('click', () => {
+            navList.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

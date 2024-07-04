@@ -1,0 +1,221 @@
+body {
+    font-family: 'Libre Caslon Text', serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(fundo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+header {
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav li {
+    margin: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 10px;
+    color: #ddd;
+}
+
+h2, h3, p {
+    font-family: 'Libre Caslon Text', serif;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #ddd;
+    margin-top: -2%;
+}
+
+.projeto {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 20px auto;
+    width: 300px;
+}
+
+.projeto h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.projeto p {
+    margin-bottom: 0;
+}
+
+.projeto a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #007BFF;
+}
+
+.container {
+    text-align: center;
+}
+
+.container img {
+    max-width: 100%;
+}
+
+#home {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.container {
+    display: inline-block;
+}
+
+.container img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+p {
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: justify;
+}
+
+#tecnologias {
+    text-align: center;
+    padding: 30px 0;
+}
+
+#tecnologias h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #ddd;
+    margin-top: -5%;
+}
+
+#tecnologias .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#tecnologias .container img {
+    max-width: 100%;
+    margin: 10px;
+}
+
+#contato h2 {
+    text-align: center;
+    margin-bottom: 70px;
+    color: #ddd;
+    margin-top: 50px;
+}
+
+#contato {
+    text-align: center; 
+    padding: 30px 0; 
+}
+
+#contato img {
+    max-width: 100%;
+    margin: 10px;
+}
+
+nav a {
+    text-decoration: none; 
+    padding: 10px 20px; 
+    color: #ffffff; 
+    position: relative; 
+    transition: color 0.3s, background-color 0.3s; 
+}
+
+nav a:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #7e42d9;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-out;
+    transform-origin: bottom right;
+}
+
+nav a:hover {
+    color: #fff; 
+}
+
+nav a:hover:before {
+    transform: scaleX(1); 
+    transform-origin: bottom left;
+}
+
+.icone-contato {
+    transition: transform 0.3s ease-in-out; 
+}
+
+.icone-contato:hover {
+    transform: scale(1.3); 
+}
+
+/* Media queries para dispositivos móveis */
+@media (max-width: 768px) {
+    nav ul {
+        flex-wrap: nowrap; 
+    }
+
+    nav li {
+        margin: 5px;
+    }
+
+    p {
+        padding: 0 15px;
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .projeto a {
+        padding: 8px;
+    }
+
+    #tecnologias .container img {
+        width: 50px;
+        height: auto;
+    }
+
+    #contato img {
+        width: 40px;
+        height: auto;
+    }
+}
